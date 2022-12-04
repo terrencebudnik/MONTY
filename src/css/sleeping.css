@@ -1,0 +1,10 @@
+.sleepingHome {
+    display: flex;
+    margin-top: 275px;
+    justify-content: center;
+}
+
+
+.wakeHome {
+    visibility: hidden;
+}
