@@ -1,21 +1,21 @@
-.wake-gif {
+.sleep-gif {
     height: 400px;
     width: 400px;
 }
 
-.modal-body-wake {
+.modal-body-sleep {
     display: flex;
     justify-content: center;
     margin-top: 300px;
 }
 
-.modal-footer-wake {
+.modal-footer-sleep {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
 
-.button-close-wake {
+.button-close-sleep {
     align-items: center;
     appearance: none;
     background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
@@ -47,11 +47,11 @@
     font-size: 18px;
   }
   
-  .button-close-wake:focus {
+  .button-close-sleep:focus {
     box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
   }
   
-  .button-close-wake:hover {
+  .button-close-sleep:hover {
     box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
     transform: translateY(-2px);
   }
