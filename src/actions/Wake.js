@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import wake from '../animations/monty-waking-up.gif'
+import wake from '../animations/monty-wake-up.gif'
+import '../css/wake.css'
 
 
 export default function Wake(props) {
@@ -15,10 +16,10 @@ export default function Wake(props) {
       centered
     >
       <div>
-        <h2 className='aboutHeader'>MONTY is Waking Up...</h2>
+        <h2 className='aboutHeader'>MONTY is waking up...</h2>
       </div>
       <Modal.Body>
-       <img src={wake} />
+       <img className='gif' src={wake} />
        
       </Modal.Body>
       <Modal.Footer>
