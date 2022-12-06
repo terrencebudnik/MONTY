@@ -1,12 +1,21 @@
+import React from 'react';
+import Wake from '../actions/Wake';
 import '../css/nav.css'
 
 export default function Navbar() {
+  
+  const [wakeAction, setWakeAction] = React.useState(false);
+  
   return (
     <>
     <div className='nav'>
         
    
-            <button className='navButton'>Wake Up</button>
+            <button className='navButton' onClick={() => setWakeAction(true)}>Wake Up</button>
+              <Wake 
+              show={wakeAction}
+              onHide={() => setWakeAction(false)}/> 
+              
      
         
       
