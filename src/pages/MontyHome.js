@@ -9,7 +9,7 @@ import Sleep from '../actions/Sleep';
 
 import '../css/montyhome.css'
 
-export default function MONTY() {
+export default function MontyHome() {
 
     const [wakeUpShow, setWakeUpShow] = useState(false);
     const [feedShow, setFeedShow] = useState(false);
