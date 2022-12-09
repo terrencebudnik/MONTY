@@ -1,9 +1,57 @@
 .home {
     display: flex;
     justify-content: center;
+    height: 100vh;
+    width: 100vw;
     margin-top: 200px;
 }
 
+.moveXEl {
+    animation: moveX 10s linear infinite alternate;
+
+}
+
+.moveYEl {
+    animation: moveY 12s linear infinite alternate;
+
+}
+
+
+.monty {
+    animation: moveZ 8s infinite alternate;
+   
+
+}
+
+@keyframes moveX {
+    50% {
+        transform: translateX(-400px);
+      }
+    
+    100% {
+        transform: translateX(400px);
+      }
+  }
+
+  @keyframes moveY {
+    50% {
+        transform: translateY(-200px);
+      }
+    
+    100% {
+        transform: translateY(200px);
+      }
+  }
+ 
+  @keyframes moveZ {
+    50% {
+        transform: perspective(100px) translateZ(0);
+      }
+    
+    100% {
+        transform: translateZ(120px);
+      }
+  }
 
 .head {
     display: flex;
@@ -11,8 +59,23 @@
     border-radius: 50%;
     height: 300px;
     width: 300px;
-    background: radial-gradient(circle at 50% 50%, #7404a0 0%, #6cee99 100%)
+    background: radial-gradient(circle at 50% 50%, #7404a0 0%, #6cee99 100%);
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+   
+    }
+    50% {
+      transform: scale(1.1);
+      
+    }
   }
+  
+  
 
   .eyes {
     position: absolute;
@@ -52,7 +115,10 @@
 	width: 250px;
 	height: 90px;
 	border-radius: 50px/25px;
-	background-color: transparent
+	background-color: transparent;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
   }
 
 .body:before {
@@ -92,7 +158,11 @@
     height: 300px;
     margin-top: -76px;
     margin-left: 25px;
+    animation-name: pulse;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
+
 
 #leg2 {
     display: flex;
@@ -101,6 +171,9 @@
     height: 300px;
     margin-top: -76px;
     margin-left: 53px;
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #leg3 {
@@ -110,6 +183,9 @@
     height: 310px;
     margin-top: -63px;
     margin-left: 78px;
+    animation-name: pulse;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
 #leg4 {
@@ -119,6 +195,9 @@
     height: 310px;
     margin-top: -42px;
     margin-left: 108px;
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #leg5 {
@@ -128,6 +207,9 @@
     height: 310px;
     margin-top: -42px;
     margin-left: 160px;
+    animation-name: pulse;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
 #leg6 {
@@ -137,6 +219,9 @@
     height: 300px;
     margin-top: -63px;
     margin-left: 193px;
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #leg7 {
@@ -146,6 +231,9 @@
     height: 310px;
     margin-top: -76px;
     margin-left: 223px;
+    animation-name: pulse;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
 #leg8 {
@@ -155,4 +243,7 @@
     height: 310px;
     margin-top: -76px;
     margin-left: 259px;
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
