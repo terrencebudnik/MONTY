@@ -78,3 +78,81 @@
 	background-image: radial-gradient(#1fa3c1, #591bbbc7);
 	content: '';
 }
+
+.legs {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#leg1 {
+    display: flex;
+    position: absolute;
+    border-left: 10px solid purple;
+    height: 300px;
+    margin-top: -76px;
+    margin-left: 25px;
+}
+
+#leg2 {
+    display: flex;
+    position: absolute;
+    border-left: 10px solid purple;
+    height: 300px;
+    margin-top: -76px;
+    margin-left: 53px;
+}
+
+#leg3 {
+    display: flex;
+    position: absolute;
+    border-left: 10px solid purple;
+    height: 310px;
+    margin-top: -63px;
+    margin-left: 78px;
+}
+
+#leg4 {
+    display: flex;
+    position: absolute;
+    border-left: 10px solid purple;
+    height: 310px;
+    margin-top: -42px;
+    margin-left: 108px;
+}
+
+#leg5 {
+    display: flex;
+    position: absolute;
+    border-left: 10px solid purple;
+    height: 310px;
+    margin-top: -42px;
+    margin-left: 160px;
+}
+
+#leg6 {
+    display: flex;
+    position: absolute;
+    border-left: 10px solid purple;
+    height: 300px;
+    margin-top: -63px;
+    margin-left: 193px;
+}
+
+#leg7 {
+    display: flex;
+    position: absolute;
+    border-left: 10px solid purple;
+    height: 310px;
+    margin-top: -76px;
+    margin-left: 223px;
+}
+
+#leg8 {
+    display: flex;
+    position: absolute;
+    border-left: 10px solid purple;
+    height: 310px;
+    margin-top: -76px;
+    margin-left: 259px;
+}
