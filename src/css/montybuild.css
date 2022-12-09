@@ -1,0 +1,80 @@
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+
+.head {
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    background: radial-gradient(circle at 50% 50%, #7404a0 0%, #6cee99 100%)
+  }
+
+  .eyes {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+  }
+
+  #eye1 {
+    display: flex;
+    width: 30%;
+    height: 60%;
+    margin-top: 100px;
+    margin-left: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, #101618 0%, #6fbfffd1 30%, #4381b2 100%)
+    
+  }
+
+  #eye2 {
+    display: flex;
+    width: 30%;
+    height: 60%;
+    margin-top: 100px;
+    margin-left: 195px;
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, #101618 0%, #6fbfffd1 30%, #4381b2 100%)
+    
+  }
+
+  .body {
+	position: relative;
+	overflow: hidden;
+	margin-top: -60px;
+    margin-left: 61px;
+	width: 250px;
+	height: 90px;
+	border-radius: 50px/25px;
+	background-color: transparent
+  }
+
+.body:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 250px;
+	height: 50px;background-image: radial-gradient(#1fa3c1, #591bbbc7);
+	border-radius: 50px/25px;
+	background-color: rgba(39, 20, 219, 0.2);
+	content: '';
+    border-color: #4381b2;
+    border-width: 1px;
+}
+
+.body:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 250px;
+	height: 50px;
+	border-radius: 50px/25px;
+	background-image: radial-gradient(#1fa3c1, #591bbbc7);
+	content: '';
+}
