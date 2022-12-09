@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import WakeUp from '../actions/Wake';
-import Feed from '../actions/Feed';
-import Sleep from '../actions/Sleep';
+import Chill from '../components/Chill.js'
+
+
 
 import '../css/montyhome.css'
 
 export default function MontyHome() {
 
-    const [wakeUpShow, setWakeUpShow] = useState(false);
-    const [feedShow, setFeedShow] = useState(false);
-    const [sleepShow, setSleepShow] = useState(false);
+    const [active, setActive] = useState("")
+    
 
     return (
 
@@ -22,36 +21,30 @@ export default function MontyHome() {
             <Container className='container-main' fluid>
                 <Row className='button-row'>
                     <Col className='button-col'>
-                        <button className='button' onClick={() => setWakeUpShow(true)}>Wake Up</button>
+                        <button className='button'>Wake Up</button>
                     </Col>
                     <Col className='button-col'>
-                        <button className='button' onClick={() => setFeedShow(true)}>Feed</button>
+                        <button className='button'>Feed</button>
                     </Col>
                     <Col className='button-col'>
                         <button className='button'>Play</button>
                     </Col>
                     <Col className='button-col'>
-                        <button className='button'>Chill</button>
+                        <button className='button' onClick={()=> setActive("Chill")}>Chill</button>
                     </Col>
                     <Col className='button-col'>
-                        <button className='button' onClick={() => setSleepShow(true)}>Sleep</button>
+                        <button className='button'>Sleep</button>
                     </Col>
                 </Row>
+                
+                    
+                
 
             </Container>
 
+            {active === "Chill" && <Chill />}
+            
 
-            <WakeUp
-                show={wakeUpShow}
-                onHide={() => setWakeUpShow(false)} />
-
-            <Feed
-                show={feedShow}
-                onHide={() => setFeedShow(false)} />
-
-            <Sleep
-                show={sleepShow}
-                onHide={() => setSleepShow(false)} />
 
 
 

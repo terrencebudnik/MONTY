@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import Container from 'react-bootstrap/Container';
 
-import '../css/montybuild.css'
+import '../css/chill.css'
 
 
-export default function MontyBuild() {
+export default function Chill() {
    
     return (
         <Container className='home'>
-            <div className='moveXEl'>
-
-            <div className='moveYEl'>
          
                 <div className ='monty'>
 
@@ -34,8 +31,8 @@ export default function MontyBuild() {
 
                 </div>
                
-            </div>
-        </div>
+            
+      
           
         </Container>
 

@@ -1,57 +1,31 @@
 .home {
     display: flex;
+    height: 100%;
+    width: 100%;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    margin-top: 200px;
-}
-
-.moveXEl {
-    animation: moveX 10s linear infinite alternate;
-
-}
-
-.moveYEl {
-    animation: moveY 12s linear infinite alternate;
-
 }
 
 
 .monty {
-    animation: moveZ 8s infinite alternate;
-   
+  animation: float 8s infinite alternate;
 
 }
 
-@keyframes moveX {
-    50% {
-        transform: translateX(-400px);
-      }
-    
-    100% {
-        transform: translateX(400px);
-      }
-  }
 
-  @keyframes moveY {
-    50% {
-        transform: translateY(-200px);
+  
+
+  @keyframes float {
+    0% {
+        transform: translateX(50px);
       }
-    
-    100% {
-        transform: translateY(200px);
+
+     
+      100% {
+        transform: translateX(-50px);
       }
   }
  
-  @keyframes moveZ {
-    50% {
-        transform: perspective(100px) translateZ(0);
-      }
-    
-    100% {
-        transform: translateZ(120px);
-      }
-  }
+  
 
 .head {
     display: flex;

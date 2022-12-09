@@ -20,11 +20,6 @@ export default function Header() {
                     <a className='link' href='/montyhome'>Spend Some Time With MONTY</a>
                 </Col>
             </Row>
-            <Row>
-                <Col className='col-link'>
-                    <a className='link' href='/montybuild'>Make Your Own MONTY</a>
-                </Col>
-            </Row>
         </Container>
 
     );
